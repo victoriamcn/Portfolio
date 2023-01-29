@@ -5,80 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Playfair Display|Roboto Condensed|Roboto|Material+Icons">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display|Roboto Condensed|Roboto|Material+Icons" />
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <title>Victoria McNorrill</title>
 </head>
 
 <body>
+    <!--Header-->
     <header>
-        <nav id="navbar">
-            <a class="navbar" href="#about_">About</a>
-            <a class="navbar" href="#projects_">Projects</a>
-            <a class="navbar" href="#contact_">Contact</a>
+        <h1>Victoria McNorrill</h1>
+        <nav>
+            <a class="navbar" href="#about_"> About </a>
+            <a class="navbar" href="#projects_"> Projects </a>
+            <a class="navbar" href="#contact_"> Contact </a>
         </nav>
     </header>
+
+    <!--Main-->
     <main>
-        <section id="welcome-section">
-            <div class="welcome-section">
-                <div class="h1">
-                    <h1>Hello There</h1>
-                    <div>
-                        <p id="welcome-section">Welcome to my portfolio.</p>
-                        <div>
+        <!--Welcome-->
+        <section class="welcome-section">
+            <h2>Hello There</h2>
+            <img src="./assets/Images/professionalportrait jpeg.png" alt="balck and white photo of a young professional woman smiling at the camera"/>
+            <p class="welcome-section">Welcome to my portfolio.</p>
         </section>
-        <section id="about">
+
+        <!--About-->
+        <section class="about">
             <h2>About Victoria</h2>
             <p>All this happened. More or less.</p>
+            <p>This also happened.</p>
+            <p>Final set of things that happened.</p>
         </section>
-        <section id="projects">
-            <h2 class="project-tile">Some of my projects.<div class="project-tile-button">
+
+        <!--Projects-->
+        <section class="projects">
+            <h2 class="project-tile">Some of my projects.
+                <!--Show more button-->
+                <div class="project-tile-button">
                     <a href="https://codepen.io/victoriaelizabeth">
                         <button type="button"> Show all > </button></a>
                 </div>
             </h2>
-            <div class="container">
-                <div class="project-tilea">
-                    <a class="image" id="profile-link" target="_blank"
-                        href="https://codepen.io/victoriaelizabeth/pen/jOKXYdR">
-                        <figcaption>Survey Project</figcaption>
-                        <picture src="">
-                            <img class="image" src="freeCodeCamp-survey.PNG" alt="freeCodeCamp Survey Page" />
-                        </picture>
+            <!--Project Tiles...make into a grid-->
+            <section class="container">
+                <div class="tile">
+                    <a>
+                    <figcaption>Project A</figcaption>
+                    <figure ></figure>
                     </a>
                 </div>
-                <div class="project-tileb">
-                    <a class="image" id="profile-link" target="_blank"
-                        href="https://codepen.io/victoriaelizabeth/pen/bGKzdWJ">
-                        <figcaption>Tribute Project</figcaption>
-                        <picture src="">
-                            <img class="image" src="taylor-swift-tribute-page.PNG" alt="Taylor Swift Tribute Page" />
-                        </picture>
+                <div class="tile">
+                    <a>
+                    <figcaption>Project B</figcaption>
+                    <figure></figure>
                     </a>
                 </div>
-                <div class="project-tilec">
-                    <a class="image" id="profile-link" target="_blank"
-                        href="https://codepen.io/victoriaelizabeth/pen/poKGjRP">
-                        <figcaption>Product Page Project</figcaption>
-                        <picture src="">
-                            <img class="image" src="vans-product-landing-page.PNG" alt="Vans Product Landing Page" />
-                            <picture>
+                <div class="tile">
+                    <a>
+                    <figcaption>Project C</figcaption>
+                    <figure></figure>
                     </a>
                 </div>
-                <div class="project-tiled">
-                    <a class="image" id="profile-link" target="_blank" href="">
-                        <figcaption>Animation Project</figcaption>
-                        <picture src="">
-                            <img class="image" src="penguin-animation.PNG" alt="Waving Penguin Animation" />
-                            <picture>
-                    </a>
-                </div>
-            </div>
+            </section>
         </section>
     </main>
+
+    <!--Footer-->
     <footer>
-        <div class="footer">
+        <section class="footer">
             <h3 class="contact">Get in touch:</h3>
             <i class="material-icons">lan</i>
             <a class="contact" href="https://codepen.io/victoriaelizabeth">CodePen</a>
@@ -86,7 +82,7 @@
             <a class="contact" href="https://www.linkedin.com/in/victoria-mcnorrill/">LinkedIn</a>
             <i class="material-icons">mail</i>
             <a class="contact" href="vmcnorrill@gmail.com">Email</a>
-        </div>
+        </section>
     </footer>
 </body>
 
