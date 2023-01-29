@@ -6,6 +6,7 @@
     letter-spacing: 0.6px;
     width: auto;
     height: auto;
+    font-size: 14px;
 }
 
 :root {
@@ -23,23 +24,17 @@
 header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    font-size: 21px;
+    justify-content: space-between;
 }
 
 /* NAVIGATION */
 nav {
-    padding: 15px;
-    top: 0;
-    font-size: 24;
-    width: 100%;
-    height: auto;
+    display: flex;
+    justify-content:flex-end;
 }
 
 nav a {
     text-decoration: none;
-    margin: 10px;
     font-weight: bold;
 }
 
@@ -54,30 +49,19 @@ h1, h2, h3 {
 }
 
 img {
-    height: 200px;
-    width: 300px;
+    width: 33%;
+    float: right;
+}
+
+.material-icons {
+    color: var(--red-color);
 }
 
 /* PROJECTS SECTION */
 
-figcaption {
-    font-weight: bold;
-    align-content: center;
-    text-align: center;
-}
-
 .container {
-    display: inline-grid;
-    gap: 28px;
-    grid-template-columns: 3;
-    grid-template-rows: 4;
-    place-self: center;
-}
-
-.project-tile {
-    background-color: var(--purple-color);
-    border-radius: 10px;
-    padding: 14px;
+    display: grid;
+    gap: 5%;
 }
 
 /* BUTTON */
@@ -85,18 +69,15 @@ button {
     border: 2px solid var(--red-color);
     color: var(--red-color);
     text-align: center;
-    display: inline-block;
-    font-size: 21px;
-    margin: 10px;
-    padding: 10px 5px;
-    cursor: pointer;
-    width: 200px
+    font-size: 14px;
+    width: auto;
 }
 
 button:hover {
-    background-color: var(--red-color);
-    color: var(--purple-color);
     border: 2px solid var(--purple-color);
+    color: var(--purple-color);
+    background-color: var(--red-color);
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -104,12 +85,9 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
-    font-size: 21px;
 }
 
 a.contact {
-    font-size: 24px;
     align-items: baseline;
 }
 
@@ -117,10 +95,6 @@ a.contact:hover {
     text-decoration: underline;
     color: var(--orange-color);
     cursor: pointer;
-}
-
-.material-icons {
-    color: var(--red-color);
 }
 
 /* SMALL SCREENS */
