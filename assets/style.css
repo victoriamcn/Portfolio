@@ -1,0 +1,235 @@
+/* EVERYTHING */
+* {
+    font-family: Roboto;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    letter-spacing: 0.6px;
+}
+
+:root {
+    --black-color: #323031;
+    --white-color: #fefcfb;
+    --blue-color: #3a506b;
+    --purple-color: #9e0059;
+    --red-color: #ff0054;
+    --orange-color: #ff5400;
+    --yellow-color: #ffbd00;
+}
+
+/* NAV LINKS */
+a.navbar {
+    text-decoration: none;
+    margin: 10px;
+    color: var(--white-color);
+    background-color: var(--purple-color);
+    font-weight: bold;
+}
+
+a.navbar:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a.contact {
+    background-color: none;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* NAVBAR */
+nav {
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    font-size: 24;
+    background-color: var(--purple-color);
+    width: 100%;
+    height: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* CONTENT */
+section {
+    width: 100%;
+    height: auto;
+    margin: 75px 30px;
+}
+
+.first-paragraph::first-letter {
+    font-size: 6rem;
+    color: orangered;
+    float: left;
+    margin-right: 1rem;
+}
+
+/* TEXT CODE */
+h1,
+h2 {
+    font-family: Playfair Display;
+}
+
+div h1 {
+    font-size: 42px;
+    animation: wiggle 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    20% {
+        transform: rotate(0.3deg)
+    }
+
+    40% {
+        transform: rotate(-0.3deg)
+    }
+
+    60% {
+        transform: rotate(0.3deg)
+    }
+
+    80% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(-0.3deg)
+    }
+}
+
+h2 {
+    font-size: 35px;
+}
+
+/* PROJECTS SECTION */
+
+figcaption {
+    font-weight: bold;
+    align-content: center;
+    text-align: center;
+}
+
+a.image {
+    text-decoration: none;
+}
+
+img.image {
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+}
+
+div.container {
+    display: inline-grid;
+    gap: 28px;
+    grid-template-columns: 3;
+    grid-template-rows: 4;
+    place-self: center;
+}
+
+div.project-tilea,
+div.project-tileb,
+div.project-tilec,
+div.project-tiled {
+    background-color: var(--purple-color);
+    border-radius: 10px;
+    padding: 14px;
+}
+
+div.project-tilea {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+div.project-tileb {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+div.project-tilec {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+div.project-tiled {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+div.project-tile-button {
+    grid-row: end-line;
+    place-content: center;
+}
+
+/* BUTTON */
+button {
+    border: 2px solid var(--red-color);
+    color: var(--red-color);
+    text-align: center;
+    display: inline-block;
+    font-size: 21px;
+    margin: 10px;
+    padding: 10px 5px;
+    cursor: pointer;
+    width: 200px
+}
+
+button:hover {
+    background-color: var(--red-color);
+    color: var(--purple-color);
+    border: 2px solid var(--purple-color);
+}
+
+/* FOOTER */
+div.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 21px;
+}
+
+a.contact {
+    font-size: 24px;
+    align-items: baseline;
+}
+
+a.contact:hover {
+    text-decoration: underline;
+    color: var(--orange-color);
+    cursor: pointer;
+}
+
+.material-icons {
+    color: var(--red-color);
+}
+
+/* MEDIA THINGS */
+@media only screen and (max-width: 720px) {
+    .image-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .text-with-images {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .hero-title {
+        font-size: 6rem;
+    }
