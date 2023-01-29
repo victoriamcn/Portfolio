@@ -13,10 +13,17 @@ Provide a short description explaining the what, why, and how of your project. U
 
 If your README is long, add a table of contents to make it easy for users to find what they need.
 
+- [Mock-Up](#mock-up)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+
+## Mock-Up
+
+The following image shows the web application's appearance and functionality:
+
+![]()
 
 ## Installation
 

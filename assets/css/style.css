@@ -44,13 +44,19 @@ nav a:hover {
 }
 
 /* GENERAL CONTENT STYLING */
-h1, h2, h3 {
+
+h1 {
     font-family: Playfair Display;
+    font-size: 28px;
+}
+
+h2, h3 {
+    font-family: Playfair Display;
+    font-size: 21px;
 }
 
 img {
     width: 33%;
-    float: right;
 }
 
 .material-icons {
@@ -85,16 +91,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-a.contact {
-    align-items: baseline;
-}
-
-a.contact:hover {
-    text-decoration: underline;
-    color: var(--orange-color);
-    cursor: pointer;
 }
 
 /* SMALL SCREENS */
