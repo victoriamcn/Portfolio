@@ -92,18 +92,28 @@ h2, h3 {
 
 .tile {
     display: flex;
+    flex-flow: column wrap;
+    flex: 0 0 40%; /* flex-grow, flex-shrink, flex-basis https://stackoverflow.com/questions/45202838/flexbox-make-one-item-4x-bigger-than-other-items */
+    align-items: center;
     justify-content: center;
+    align-content: space-evenly;
+    gap: 10px;
     border: 1px solid var(--orange);
-    margin: 10px;
-    padding: 10px;
 }
+
+/* One application bigger than the others */
+.container > .big { 
+    align-self: flex-start;
+    flex: 0 0 80%; /* flex-grow, flex-shrink, flex-basis https://stackoverflow.com/questions/45202838/flexbox-make-one-item-4x-bigger-than-other-items */
+} 
 
 /* CONTACT FORM */
 article > form {
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
+    display: flex;
+    flex-flow: column wrap;
+    align=content: flex-start;
     align-items: center;
+    justify-content: center;
   }
 
 fieldset {
