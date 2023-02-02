@@ -107,7 +107,7 @@ h2, h3 {
     flex: 0 0 80%; /* flex-grow, flex-shrink, flex-basis https://stackoverflow.com/questions/45202838/flexbox-make-one-item-4x-bigger-than-other-items */
 } 
 
-/* CONTACT FORM */
+/* CONTACT FORM */ /*maybe best to not have the contact form on the side bar and keep it on the bottom of the web page to meet acceptance requirements...note self: redo this CSS code once you have corrected the index.html*/
 article > form {
     display: flex;
     flex-flow: column wrap;
