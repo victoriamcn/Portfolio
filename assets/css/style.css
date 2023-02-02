@@ -3,11 +3,11 @@
 :root {
     --dark-color: #323031;
     --light-color: #fefcfb;
-    --blueberry: #3a506b;
+    --blueberry: #605770;
     --rasberry: #9e0059;
     --cherry: #ff0054;
-    --orange: #ff5400;
-    --banana: #ffbd00;
+    --orange: #f18805;
+    --banana: #edcb96;
 }
 
 /* BODY */
@@ -98,12 +98,26 @@ h2, h3 {
     padding: 10px;
 }
 
-/* Contact Article */
-article {
-    background-color: var(--blueberry);
-    display: flex;
+/* CONTACT FORM */
+article > form {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 
-}
+fieldset {
+    height: auto; 
+    width: 500px; 
+    font-size:21px;
+  }
+
+input, select {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 8px 5px 5px 5px; 
+    font-size: 14px;
+  }
 
 /* BUTTON */
 button {
