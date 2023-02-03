@@ -1,4 +1,4 @@
-/* EVERYTHING */
+/* EVERYTHING 
 
 :root {
     --dark-color: #323031;
@@ -10,7 +10,7 @@
     --banana: #edcb96;
 }
 
-/* BODY */
+/* BODY 
 
 body {
     font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
@@ -19,7 +19,7 @@ body {
     font-size: 100%;
 }
 
-/* HEADER */
+/* HEADER 
 
 header {
     display: flex;
@@ -30,22 +30,8 @@ header {
     color: var(--light-color);
 }
 
-/* HEADER and NAVIGATION */
+/* HEADER and NAVIGATION 
 
-h1 {
-    margin: 0px 10px;
-}
-
- div .hero {
-    height: 888px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("assets/Images/professionalportrait jpeg.png");
-    background-position: center;
-    background-size: cover;
-}
-
-/* NAVIGATION */
 nav {
     display: flex;
     justify-content:flex-end;
@@ -54,18 +40,8 @@ nav {
     padding: 2rem;
 }
 
-nav a {
-    text-decoration: none;
-    font-weight: bold;
-}
 
-nav a:hover {
-    text-decoration: none;
-    cursor: pointer;
-
-}
-
-/* GENERAL CONTENT STYLING */
+/* GENERAL CONTENT STYLING 
 
 h1 {
     font-family: Playfair Display;
@@ -81,7 +57,7 @@ h2, h3 {
     color: var(--cherry);
 }
 
-/* PROJECTS SECTION */
+/* PROJECTS SECTION 
 
 section.about, section.projects {
     width: 75%;
@@ -101,7 +77,7 @@ section.about, section.projects {
     display: flex;
     flex-flow: column wrap;
     flex: 0 0 40%; /* flex-grow, flex-shrink, flex-basis https://stackoverflow.com/questions/45202838/flexbox-make-one-item-4x-bigger-than-other-items */
-    align-items: center;
+    /* align-items: center;
     justify-content: center;
     align-content: space-evenly;
     gap: 10px;
@@ -115,7 +91,7 @@ section.about, section.projects {
 } 
 
 /* CONTACT FORM */ /*maybe best to not have the contact form on the side bar and keep it on the bottom of the web page to meet acceptance requirements...note self: redo this CSS code once you have corrected the index.html*/
-article > form {
+/* article > form {
     display: flex;
     flex-flow: column wrap;
     align=content: flex-start;
@@ -136,7 +112,7 @@ input, select {
     font-size: 14px;
   }
 
-/* BUTTON */
+/* BUTTON 
 button {
     border: 2px solid var(--cherry);
     color: var(--cherry);
@@ -152,7 +128,7 @@ button:hover {
     cursor: pointer;
 }
 
-/* FOOTER */
+/* FOOTER 
 footer {
     display: flex;
     flex-direction: row;
@@ -160,9 +136,11 @@ footer {
     align-items: center;
 }
 
-/* SMALL SCREENS */
-@media screen and (max-width: 500px) {
+/* SMALL SCREENS 
+@media screen and (max-width: 480px) {
     * {
-        display: block; 
+        display: block;
+        margin: 2%;
+        border: none;
     }
-}
+} n*/

@@ -13,23 +13,28 @@
 </head>
 
 <body>
-    <!--Header--><!--good reference for what I would like my portfolio to look like https://www.w3schools.com/howto/tryw3css_templates_portfolio.htm-->
-    <header>
-        <h1>Victoria McNorrill</h1>
-        <nav>
-            <a href="#about"> About </a>
-            <a href="#projects"> Projects </a>
-            <a href="#contact"> Contact </a>
-        </nav>
-    </header>
+    <!--Side Navigation--><!--good reference for what I would like my portfolio to look like https://www.w3schools.com/howto/tryw3css_templates_portfolio.htm-->
+    <nav class="sidebar">
+        <br>
+        <div class="sidebarcontainer">
+            <img src="./assets/Images/professionalportrait jpeg.png" style="width: 75%" alt="Black and white headshot of a professional woman"/>
+            <br>
+            <br>
+            <h1 class="navheader">Victoria McNorrill</h1>
+            <h1 class="navheader">Full-Stack Web Developer</h2>
+                <br>
+            <p>Welcome to my portfolio!</p>
+        </div>
+        <br>
+        <div class="navlinks">
+            <i class="materialicons">mood</i><a href="#about">About</a>
+            <i class="materialicons">folder</i><a href="#portfolio">Portfolio</a>
+            <i class="materialicons">mail</i><a href="#contact">Contact</a>
+        </div>
+    </nav>
 
     <!--Main-->
     <main>
-        <!--Hero-->
-        <section class="hero">
-            <h2>Victoria McNorrill</h2>
-            <h3>Full-Stack Software Developer</h3>
-        </section>
         <!--About-->
         <section id="about" class="about">
             <h2>About</h2>
@@ -41,8 +46,8 @@
                 and friends exploring new adventures.</p>
         </section>
 
-        <!--Projects-->
-        <section id="projects" class="projects">
+        <!--Portfolio-->
+        <section id="portfolio" class="portfolio">
             <h2>
                 Deployed applications incoming...
             </h2>
@@ -99,19 +104,19 @@
                 <li>Greenville, SC</li>
                 <li>Phone: 864.921.5578</li>
                 <li>Email: vmcnorrill@gmail.com</li>
-                
+
             </ul>
         </section>
     </main>
 
     <!--Footer-->
     <footer>
-        <p class="social">Get in touch: </p>
+        <p class="social">Follow Me: </p>
         <i class="material-icons">hub</i><a href="https://github.com/victoriamcn">GitHub</a>
         <i class="material-icons">lan</i><a href="https://codepen.io/victoriaelizabeth">CodePen</a>
         <i class="material-icons">group</i><a href="https://www.linkedin.com/in/victoria-mcnorrill/">LinkedIn</a>
     </footer>
-<!--Contact Form
+    <!--Contact Form for future reference
             <form id="contactform" name="surveyform">
                 <fieldset>
                     <label for="name" class="contactinfo">Name: </label>
