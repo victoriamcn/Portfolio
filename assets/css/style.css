@@ -144,21 +144,34 @@ h2, h3 {
 
 
 /* PORTFOLIO */
-.portfoliocontainer {
-    display: grid;
-    grid-auto-columns: 1fr 1fr;
-    grid-auto-rows: 1fr 1fr 1fr;
-}
 
-/* One tile bigger than the others */
 
 .portfolioimg {
-    width: 100%;
+    width: 200px;
     height: auto;
 }
 
-/* CONTACT SECTION /*
+h4 {
+    font-family: Playfair Display;
+    font-size: 90%;
+}
 
+.portfoliocontainer {
+    display: flex;
+    flex-flow: row;
+}
+
+.tile {
+    flex-basis: fit-content;
+    margin: 5px;
+    padding: 5px;
+    background-color: var(--light);
+}
+
+/* CONTACT SECTION */
+ul {
+    display: inline-block;
+}
 
 /* FOOTER 
 footer {
