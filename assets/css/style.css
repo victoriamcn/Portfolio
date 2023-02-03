@@ -1,51 +1,131 @@
-/* EVERYTHING 
+/* EVERYTHING */
 
 :root {
-    --dark-color: #323031;
-    --light-color: #fefcfb;
-    --blueberry: #605770;
+    --darkcolor: #040406;
+    --background: #dfdede;
+    --light: #ffffff;
     --rasberry: #9e0059;
     --cherry: #ff0054;
-    --orange: #f18805;
-    --banana: #edcb96;
+    --orange: #e38125;
 }
 
-/* BODY 
+/* BODY */
 
 body {
     font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
-    background-color: var(--light-color);
+    background-color: var(--light);
     color: var(--dark-color);
     font-size: 100%;
+    line-height: 1.5;
 }
 
-/* HEADER 
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--rasberry);
-    color: var(--light-color);
+@media screen and (min-width: 480px) {
+    body {
+        display: block;
+        margin: 0;
+        border: none;
+        align-content: center;
+    }
 }
 
-/* HEADER and NAVIGATION 
+/* SIDE NAVIGATION */
 
 nav {
-    display: flex;
-    justify-content:flex-end;
-    text-decoration: none;
-    color: var(--banana);
-    padding: 2rem;
+    display: block;
+    position: fixed;
+    padding: 20px;
+    width: 300px;
 }
 
+nav.sidebarcontainer {
+    height: 100%;
+    background-color: var(--sidebar);
+    overflow: auto;
+}
 
-/* GENERAL CONTENT STYLING 
+.sidebarimg {
+    width: 100%;
+    border-radius: 5px;
+    align-self: center;
+}
 
-h1 {
-    font-family: Playfair Display;
-    font-size: 200%;
+.sidebarcontainer > h1 {
+    margin: 10px 0;
+    font-family: 'Playfair Display', 'Times', 'serif';
+    font-size: 150%;
+    font-weight: bold;
+}
+
+h1.job {
+    font-size: 80%;
+}
+
+.sidebarcontainer > p {
+    font-size: 75%;
+}
+
+/* The links in the navigation have specific layout since it's in the side bar*/
+.navlinks {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 75%;
+    margin: 5%;
+    width: auto;
+}
+
+/* ALL LINKS */
+a:link {
+    color: var(--darkcolor);
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: var(--rasberry);
+    color: var(--orange);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+a:active {
+    background-color: var(--cherry);
+    color: var(--light)
+}
+
+.material-icons {
+    color: var(--cherry);
+}
+
+/* BUTTON */
+button {
+    border: 2px solid var(--cherry);
+    color: var(--cherry);
+    text-align: center;
+    font-size: 21;
+    width: auto;
+}
+
+button:hover {
+    border: 2px solid var(--rasberry);
+    color: var(--rasberry);
+    background-color: var(--cherry);
+    cursor: pointer;
+}
+
+/* MAIN CONTENT STYLING */
+main {
+    margin-left: 350px;
+    background-color: var(--background);
+    width: auto;
+    padding: 15px;
+}
+
+section > .about, .portfolio, .contact {
+    margin-bottom: 25px;
 }
 
 h2, h3 {
@@ -53,45 +133,43 @@ h2, h3 {
     font-size: 150%;
 }
 
-.material-icons {
-    color: var(--cherry);
+/* ABOUT SECTION */
+.about {
+    display: block;
 }
 
-/* PROJECTS SECTION 
-
-section.about, section.projects {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+.about > p {
+    font-size: 60%;
 }
 
-.container {
+
+/* PORTFOLIO */
+.portfoliocontainer {
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+}
+
+/* One tile bigger than the others */
+
+.portfolioimg {
+    width: 100%;
+    height: auto;
+}
+
+/* CONTACT SECTION /*
+
+
+/* FOOTER 
+footer {
     display: flex;
-    justify-content: flex-start;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-
-.tile {
-    display: flex;
-    flex-flow: column wrap;
-    flex: 0 0 40%; /* flex-grow, flex-shrink, flex-basis https://stackoverflow.com/questions/45202838/flexbox-make-one-item-4x-bigger-than-other-items */
-    /* align-items: center;
     justify-content: center;
-    align-content: space-evenly;
-    gap: 10px;
-    border: 1px solid var(--orange);
+    align-items: center;
 }
 
-/* One application bigger than the others */
-.container > .big { 
-    align-self: flex-start;
-    flex: 0 0 80%; /* flex-grow, flex-shrink, flex-basis https://stackoverflow.com/questions/45202838/flexbox-make-one-item-4x-bigger-than-other-items */
-} 
-
-/* CONTACT FORM */ /*maybe best to not have the contact form on the side bar and keep it on the bottom of the web page to meet acceptance requirements...note self: redo this CSS code once you have corrected the index.html*/
-/* article > form {
+/* CONTACT FORM maybe best to not have the contact form on the side bar and keep it on the bottom of the web page to meet acceptance requirements...note self: redo this CSS code once you have corrected the index.html
+article > form {
     display: flex;
     flex-flow: column wrap;
     align=content: flex-start;
@@ -111,36 +189,3 @@ input, select {
     margin: 8px 5px 5px 5px; 
     font-size: 14px;
   }
-
-/* BUTTON 
-button {
-    border: 2px solid var(--cherry);
-    color: var(--cherry);
-    text-align: center;
-    font-size: 21;
-    width: auto;
-}
-
-button:hover {
-    border: 2px solid var(--rasberry);
-    color: var(--rasberry);
-    background-color: var(--cherry);
-    cursor: pointer;
-}
-
-/* FOOTER 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-/* SMALL SCREENS 
-@media screen and (max-width: 480px) {
-    * {
-        display: block;
-        margin: 2%;
-        border: none;
-    }
-} n*/

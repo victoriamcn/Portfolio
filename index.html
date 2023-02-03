@@ -13,91 +13,95 @@
 </head>
 
 <body>
-    <!--Side Navigation--><!--good reference for what I would like my portfolio to look like https://www.w3schools.com/howto/tryw3css_templates_portfolio.htm-->
+    <!--Side Navigation--><!--inspiration reference: https://www.w3schools.com/howto/tryw3css_templates_portfolio.htm-->
     <nav class="sidebar">
         <br>
         <div class="sidebarcontainer">
-            <img src="./assets/Images/professionalportrait jpeg.png" style="width: 75%" alt="Black and white headshot of a professional woman"/>
+            <img src="./assets/Images/professionalportrait jpeg.png"
+                alt="Black and white headshot of a woman smiling at the camera with her arms crossed."
+                class="sidebarimg" />
             <br>
-            <br>
-            <h1 class="navheader">Victoria McNorrill</h1>
-            <h1 class="navheader">Full-Stack Web Developer</h2>
+            <h1>Victoria McNorrill</h1>
+            <h1 class="job">Full-Stack Web Developer</h2>
                 <br>
-            <p>Welcome to my portfolio!</p>
+                <p>Welcome to my portfolio!</p>
         </div>
-        <br>
         <div class="navlinks">
-            <i class="materialicons">mood</i><a href="#about">About</a>
-            <i class="materialicons">folder</i><a href="#portfolio">Portfolio</a>
-            <i class="materialicons">mail</i><a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
     <!--Main-->
     <main>
-        <!--About-->
-        <section id="about" class="about">
-            <h2>About</h2>
-            <p>I am a SC native, currently attending Georgia Tech to earn my professional certification in Full Stack
-                Web Development. My work experience has provided me with a base knowledge in several industries
-                including energy and utilities, medical insurance, hospitality, and food service and hospitality. I earn
-                my Bachelor of Arts in Masscommunication from North Greenville University. I taught English as a Second
-                Language in Asia, South America, and Europe. When I am not working, I enjoy spending time with family
-                and friends exploring new adventures.</p>
-        </section>
+        <br>
+        <div class="maincontainer">
+            <!--About-->
+            <section id="about" class="about">
+                <h2>About</h2>
+                <p>I am currently attending Georgia Tech to earn my professional certification in Full Stack
+                    Web Development. My work experience has provided me with a base knowledge in several industries
+                    including energy and utilities, medical insurance, hospitality, and food service and hospitality. I
+                    earned my Bachelor of Arts in Mass Communication from North Greenville University. I taught English
+                    as a
+                    Second Language in Asia, South America, and Europe. When I am not working, I enjoy shopping at my
+                    local thrift stores, playing piano, and hiking around the Southeast.
+                </p>
+            </section>
 
-        <!--Portfolio-->
-        <section id="portfolio" class="portfolio">
-            <h2>
-                Deployed applications incoming...
-            </h2>
-            <!--Project Tiles-->
-            <section class="container">
-                <!--First Project application should be bigger than the others-->
-                <div class="tile big">
-                    <a href="https://github.com/victoriamcn?tab=repositories">
-                        <p>Project A</p>
-                        <img src="assets/Images/rob-lambert-9Q_pLLP_jmA-unsplash.jpg"
-                            alt="welder working. photo by Rob Lambert via UnSplash."></img>
-                    </a>
-                </div>
-                <div class="tile">
-                    <a href="https://github.com/victoriamcn?tab=repositories">
-                        <p>Project B</p>
-                        <img src="assets/Images/jason-leung-Xaanw0s0pMk-unsplash.jpg"
-                            alt="multi-color confetti on a aqua background. photo by Jason Leung via UnSplash."></img>
-                    </a>
-                </div>
-                <div class="tile">
-                    <a href="https://github.com/victoriamcn?tab=repositories">
-                        <p>Project C</p>
-                        <img src="assets/Images/billy-huynh-W8KTS-mhFUE-unsplash.jpg"
-                            alt="pink glitter on a dark background. photo by Billy Huynh via UnSplash."></img>
-                    </a>
-                </div>
-                <div class="tile">
-                    <a href="https://github.com/victoriamcn?tab=repositories">
-                        <p>Project D</p>
-                        <img src="assets/Images/rodion-kutsaiev-8P-uQaTd8rw-unsplash.jpg"
-                            alt="soft pink clouds. Photo by Rodion Kutsaiv via Unsplash."></img>
-                    </a>
-                </div>
-                <div class="tile">
-                    <a href="https://github.com/victoriamcn?tab=repositories">
-                        <p>Project E</p>
-                        <img src="assets/Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg"
-                            alt="bright blue and pink smoke. Photo by Ruvim Noga via UnSplash."></img>
-                    </a>
+            <!--Portfolio-->
+            <section id="portfolio" class="portfolio">
+                <h2>
+                    Portfolio Incoming...
+                </h2>
+                <!--Project Tiles-->
+                <section class="portfoliocontainer">
+                    <!--First Project Tile Bigger than the others-->
+                    <div class="bigtile">
+                        <a href="https://github.com/victoriamcn?tab=repositories">
+                            <p class="label">Project A</p>
+                            <img src="assets/Images/rob-lambert-9Q_pLLP_jmA-unsplash.jpg" class="portfolioimg"
+                                alt="welder working. photo by Rob Lambert via UnSplash." />
+                        </a>
+                    </div>
+                        <div class="tile">
+                            <a href="https://github.com/victoriamcn?tab=repositories">
+                                <p class="label">Project B</p>
+                                <img src="assets/Images/jason-leung-Xaanw0s0pMk-unsplash.jpg" class="portfolioimg"
+                                    alt="multi-color confetti on a aqua background. photo by Jason Leung via UnSplash." />
+                            </a>
+                        </div>
+                        <div class="tile">
+                            <a href="https://github.com/victoriamcn?tab=repositories">
+                                <p class="label">Project C</p>
+                                <img src="assets/Images/billy-huynh-W8KTS-mhFUE-unsplash.jpg" class="portfolioimg"
+                                    alt="pink glitter on a dark background. photo by Billy Huynh via UnSplash." />
+                            </a>
+                        </div>
+                        <div class="tile">
+                            <a href="https://github.com/victoriamcn?tab=repositories">
+                                <p class="label">Project D</p>
+                                <img src="assets/Images/rodion-kutsaiev-8P-uQaTd8rw-unsplash.jpg" class="portfolioimg"
+                                    alt="soft pink clouds. Photo by Rodion Kutsaiv via Unsplash." />
+                            </a>
+                        </div>
+                        <div class="tile">
+                            <a href="https://github.com/victoriamcn?tab=repositories">
+                                <p class="label">Project E</p>
+                                <img src="assets/Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg" class="portfolioimg"
+                                    alt="bright blue and pink smoke. Photo by Ruvim Noga via UnSplash." />
+                            </a>
+                        </div>
+                </section>
+                <!--Show more button-->
+                <div class="project-tile-button tile">
+                    <a href="https://codepen.io/victoriaelizabeth">
+                        <button type="button"> Show all > </button></a>
                 </div>
             </section>
-            <!--Show more button-->
-            <div class="project-tile-button tile">
-                <a href="https://codepen.io/victoriaelizabeth">
-                    <button type="button"> Show all > </button></a>
-            </div>
-        </section>
 
-        <!--Contact-->
+            <!--Contact
         <section id="contact" class="contact">
             <h2>Contact</h2>
             <ul>
@@ -107,9 +111,10 @@
 
             </ul>
         </section>
+        </div>
     </main>
 
-    <!--Footer-->
+    <!--Footer
     <footer>
         <p class="social">Follow Me: </p>
         <i class="material-icons">hub</i><a href="https://github.com/victoriamcn">GitHub</a>
