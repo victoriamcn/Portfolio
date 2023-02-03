@@ -19,12 +19,15 @@ body {
     line-height: 1.5;
 }
 
-@media screen and (min-width: 480px) {
+h1, h2, h3. h4 {
+    font-family: 'Playfair Display', 'Century', 'Times New Roman', Times, serif;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 500px) {
     body {
         display: block;
         margin: 0;
         border: none;
-        align-content: center;
     }
 }
 
@@ -100,22 +103,6 @@ a:active {
     color: var(--cherry);
 }
 
-/* BUTTON */
-button {
-    border: 2px solid var(--cherry);
-    color: var(--cherry);
-    text-align: center;
-    font-size: 21;
-    width: auto;
-}
-
-button:hover {
-    border: 2px solid var(--rasberry);
-    color: var(--rasberry);
-    background-color: var(--cherry);
-    cursor: pointer;
-}
-
 /* MAIN CONTENT STYLING */
 main {
     margin-left: 350px;
@@ -145,27 +132,34 @@ h2, h3 {
 
 /* PORTFOLIO */
 
-
-.portfolioimg {
-    width: 200px;
-    height: auto;
-}
-
 h4 {
-    font-family: Playfair Display;
+    font-family: 'Playfair Display';
     font-size: 90%;
+    color: var(--rasberry);
+    margin-bottom: 5px;
+
 }
 
 .portfoliocontainer {
     display: flex;
-    flex-flow: row;
+    flex-wrap: wrap;
+    flex: 2 1 160px;
+    justify-content: space-evenly;
 }
 
-.tile {
-    flex-basis: fit-content;
+.bigtile, .tile {
     margin: 5px;
     padding: 5px;
     background-color: var(--light);
+    border-radius: 3px;
+}
+
+.bigtile {
+    flex: 1;
+}
+
+.portfolioimg {
+    border-radius: 3px;
 }
 
 /* CONTACT SECTION */
@@ -173,7 +167,11 @@ ul {
     display: inline-block;
 }
 
-/* FOOTER 
+li {
+    padding: 10px;
+}
+
+/* FOOTER */
 footer {
     display: flex;
     flex-direction: row;
@@ -181,7 +179,7 @@ footer {
     align-items: center;
 }
 
-/* CONTACT FORM maybe best to not have the contact form on the side bar and keep it on the bottom of the web page to meet acceptance requirements...note self: redo this CSS code once you have corrected the index.html
+/* Contact Form for future reference
 article > form {
     display: flex;
     flex-flow: column wrap;
@@ -201,4 +199,4 @@ input, select {
     vertical-align: middle;
     margin: 8px 5px 5px 5px; 
     font-size: 14px;
-  }
+  } */

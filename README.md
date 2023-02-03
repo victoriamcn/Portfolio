@@ -44,6 +44,14 @@ Collaborators, if any, with links to their GitHub profiles.
 
 If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
 
+[Layout Inspiration](https://www.w3schools.com/howto/tryw3css_templates_portfolio.htm#portfolio)
+
+[Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+[Flexbox Wrapping Guide](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items)
+
+[Media Query Guide](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/)
+
 If you followed tutorials, include links to those here as well.
 
 ## License
