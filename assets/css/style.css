@@ -37,6 +37,7 @@ h1 {
 }
 
  div .hero {
+    height: 888px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("assets/Images/professionalportrait jpeg.png");
@@ -81,6 +82,12 @@ h2, h3 {
 }
 
 /* PROJECTS SECTION */
+
+section.about, section.projects {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
 
 .container {
     display: flex;
