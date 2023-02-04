@@ -13,7 +13,7 @@
 
 body {
     width: 100%;
-    font-family: Roboto, Arial, Helvetica,  sans-serif;
+    font-family: 'Roboto', Arial, Helvetica,  sans-serif;
     background-color: var(--light);
     color: var(--dark-color);
     font-size: 100%;
@@ -28,7 +28,7 @@ h3 {
 
 p,
 h4 {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 /* SIDE NAVIGATION */
@@ -246,8 +246,12 @@ button a:hover {
         margin: 0px;
         padding: 0;
         height: auto;
-        width: auto;
-        font-size: 85%;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    h1, h2, h3 {
+        font-size: 14px;
     }
 
     nav {
@@ -265,13 +269,15 @@ button a:hover {
         max-width: 300px;
     }
 
-    .contact {
+    section > .contact {
         display: block;
     }
 
     button {
-        max-width: 10%;
+        width: 100%;
+        max-width: 100px;
         padding: 0px;
+        font-size: 14px;
     }
 
     footer {
