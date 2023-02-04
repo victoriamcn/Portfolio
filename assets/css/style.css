@@ -13,7 +13,7 @@
 
 body {
     width: 100%;
-    font-family: 'Roboto', Arial, Helvetica,  sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     background-color: var(--light);
     color: var(--dark-color);
     font-size: 100%;
@@ -57,10 +57,11 @@ nav.sidebarcontainer {
     font-family: 'Playfair Display', 'Times', 'serif';
     font-size: 150%;
     font-weight: bold;
+    border-bottom: 1px solid (var(--rasberry));
 }
 
 h1.job {
-    font-size: 80%;
+    font-size: 100%;
 }
 
 .sidebarcontainer>p {
@@ -72,7 +73,7 @@ h1.job {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    font-size: 75%;
+    font-size: 90%;
     margin: 5%;
     width: auto;
 }
@@ -84,9 +85,8 @@ a:link {
 }
 
 a:hover {
-    background-color: var(--rasberry);
-    color: var(--orange);
-    text-decoration: none;
+    /*background-color: var(--rasberry);*/
+    color: var(--rasberry);
 }
 
 a:visited {
@@ -111,9 +111,7 @@ main {
     padding: 15px;
 }
 
-section>.about,
-.portfolio,
-.contact {
+section {
     margin-bottom: 25px;
 }
 
@@ -125,6 +123,8 @@ h3 {
 /* ABOUT SECTION */
 .about {
     display: block;
+    inline-size: 95%;
+    overflow: ;
 }
 
 .about>p {
@@ -136,64 +136,61 @@ h3 {
 
 h4 {
     font-size: 90%;
+    font-weight: bolder;
     color: var(--rasberry);
-    margin-bottom: 5px;
+    margin: 0;
+    margin-left: 42.5%;
 }
 
-.portfoliocontainer {
-    display: flex;
-    justify-content: center;
-}
-
-.row {
+section>.portfoliocontainer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.bigtile,
 .tile {
     margin: 5px;
     padding: 5px;
     background-color: var(--light);
     border-radius: 3px;
+    justify-content: space-evenly;
 }
 
-.bigtile {
-    flex: 1 0 80%;
-    justify-content: center;
+.tile:hover {
+    background-color: var(--light);
 }
 
-.tile {
-    flex: 0 0 20%;
+.big {
+    width: 79%;
 }
 
-
+#bigtile {
+    margin-left: 25%;
+}
 
 /* RESPONSIVE IMAGES  */
 .portfolioimg {
     border-radius: 3px;
     width: 100%;
     max-width: 400px;
-    height: auto;
-}
-
-.bigtile>.portfolioimg {
-    border-radius: 3px;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+    overflow: clip;
 }
 
 /* CONTACT SECTION */
-section.contact {
+div>.button {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-content: baseline;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    font-size: 12px;
 }
 
-/* NOT THE GUMDROP BUTTONS*/
+/* CONTACT BUTTONS*/
+
+button {
+    margin: 0;
+    padding: 0px;
+}
 
 button a:link {
     border: 2px solid var(--cherry);
@@ -232,25 +229,27 @@ button a:hover {
     color: var(--darkcolor)
 }
 
-/* MEDIA QUERIOES*/
-@media screen and (max-device-width: 768px) and (min-device-width: 360px){
+/* MEDIA QUERIES */
+@media screen and (max-device-width: 768px) and (min-device-width: 360px) {
 
     body,
     main,
-    section > .about,
-    section > .porfolio,
-    section > .contact,
+    section>.about,
+    section>.porfolio,
+    section>.contact,
     footer {
         display: block;
-        position: static;
         margin: 0px;
-        padding: 0;
+        padding: 5px;
         height: auto;
         width: 100%;
         font-size: 14px;
+        background-color: var(--light);
     }
 
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
         font-size: 14px;
     }
 
@@ -259,29 +258,22 @@ button a:hover {
         background-color: var(--light);
     }
 
-    .bigtile,
     .tile {
         max-width: 320px;
         height: 50%;
     }
 
     img {
-        max-width: 300px;
+        max-width: 200px;
     }
 
-    section > .contact {
-        display: block;
-    }
-
-    button {
-        width: 100%;
-        max-width: 100px;
-        padding: 0px;
-        font-size: 14px;
+    .contact {
+        display: none;
     }
 
     footer {
-        max-width: 100%;
+        display: block;
+        width: 100%;
         margin: 0px;
     }
 }
