@@ -58,6 +58,8 @@ If you followed tutorials, include links to those here as well.
 
 Refer to [https://github.com/victoriamcn/Portfolio/blob/main/LICENSE](https://github.com/victoriamcn/Portfolio/blob/main/LICENSE) to view licensing.
 
+[Google Fonts Material Icons License](https://www.apache.org/licenses/LICENSE-2.0.txt)
+
 ## Features
 
 If your project has a lot of features, list them here.
