@@ -12,24 +12,16 @@
 /* BODY */
 
 body {
-    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    width: 100%;
+    font-family: 'Roboto', 'Helvetica' sans-serif;
     background-color: var(--light);
     color: var(--dark-color);
     font-size: 100%;
     line-height: 1.5;
-    letter-spacing: ;
 }
 
 h1, h2, h3 {
-    font-family: 'Playfair Display', 'Century', 'Times New Roman', Times, serif;
-}
-
-@media screen and (min-device-width: 320px) and (max-device-width: 500px) {
-    body {
-        display: block;
-        margin: 0;
-        border: none;
-    }
+    font-family: 'Playfair Display', 'Optima', 'Garamond', serif;
 }
 
 /* SIDE NAVIGATION */
@@ -140,9 +132,13 @@ h4 {
 
 .portfoliocontainer {
     display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
     flex-wrap: wrap;
-    flex: 1 1 50%;
-    justify-content: space-evenly;
+    flex-direction: row;
 }
 
 .bigtile, .tile {
@@ -153,11 +149,31 @@ h4 {
 }
 
 .bigtile {
-    flex: 2 1 100%;
+    flex: 0 0 80%
 }
 
+.tile {
+    flex: 0 0 20%;
+}
+
+@media screen and (min-width: 768px) .portfoliocontainer > .tile {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+}
+
+/* RESPONSIVE IMAGES  */
 .portfolioimg {
     border-radius: 3px;
+    width: 100%;
+    max-width: 275px;
+    height: auto;
+}
+
+.bigtile > .portfolioimg {
+    border-radius: 3px;
+    width: 100%;
+    max-width: max-content;
+    height: auto;
 }
 
 /* CONTACT SECTION */
@@ -205,7 +221,22 @@ button a:hover {
     background-color: var(--light);
     color: var(--darkcolor)
 }
-
+/* MEDIA QUERIOES*/
+@media screen and (max-device-width: 768px) {
+    body {
+        display: block;
+        position: static;
+        margin: 0;
+        padding: 0;
+        border: none;
+        height: auto;
+        width: auto;
+    }
+    nav {
+        position: static;
+        height: auto;
+    }
+}
 
 /* Contact Form for future reference
 article > form {
