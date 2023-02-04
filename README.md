@@ -18,7 +18,7 @@ I also learned that having a reset.css file is good practice to better the UI/UX
 
 ## Mock-Up
 
-![Mock Up](assets/Mock Up/Portfolio.gif)
+![](https://github.com/victoriamcn/Portfolio/blob/main/assets/Mock%20Up/Portfolio.gif)
 
 <div style='position:relative;padding-bottom:48.365%;'><iframe src="//gifs.com/embed/victoria-mcnorrill-portfolio-gif-A6lJXp" frameborder="0" scrolling="no" width="734" height="355" style="backface-visibility: hidden; transform: scale(1); position: absolute; height: 100%; width: 100%;"></iframe></div>
 
