@@ -18,7 +18,7 @@ I also learned that having a reset.css file is good practice to better the UI/UX
 
 ## Mock-Up
 
-![Mock Up](assets/Victoria McNorrill Portfolio Mock Up.mov)
+![Mock Up](assets/Mock Up/Portfolio.gif)
 
 ## Usage
 
