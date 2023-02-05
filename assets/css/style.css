@@ -197,12 +197,12 @@ p.border>a:visited {
     background-color: var(--rasberry);
 }
 
-.social>i {
-    margin: 10px;
+.social>p {
+    margin-left: 10px;
 }
 
-.social>a:link,
-.social>a:visited {
+.social>p>a:link,
+.social>p>a:visited {
     color: var(--light)
 }
 
