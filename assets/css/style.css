@@ -1,4 +1,4 @@
-/* EVERYTHING */
+/* COLORS */
 
 :root {
     --darkcolor: #040406;
@@ -13,7 +13,6 @@
 
 body {
     width: 100%;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     background-color: var(--light);
     color: var(--dark-color);
     font-size: 100%;
@@ -24,11 +23,50 @@ h1,
 h2,
 h3 {
     font-family: 'Playfair Display', 'Libre Baskerville', 'Century', 'Garamond', serif;
+    font-size: 150%;
 }
 
-p,
-h4 {
+h4,
+p {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 75%;
+}
+
+h4 {
+    font-size: 90%;
+    font-weight: bolder;
+    color: var(--rasberry);
+    margin: 0;
+}
+
+
+/* ALL LINKS */
+a:link {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+a:hover {
+    /*background-color: var(--rasberry);*/
+    color: var(--rasberry);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+a:active {
+    background-color: var(--cherry);
+    color: var(--light)
+}
+
+.material-icons {
+    color: var(--cherry);
 }
 
 /* SIDE NAVIGATION */
@@ -55,8 +93,6 @@ nav {
 
 .sidebarcontainer>h1 {
     margin: 10px 0;
-    font-family: 'Playfair Display', 'Times', 'serif';
-    font-size: 150%;
     font-weight: bold;
 }
 
@@ -64,45 +100,15 @@ h1.job {
     font-size: 100%;
 }
 
-.sidebarcontainer>p {
-    font-size: 75%;
-}
-
 /* The links in the navigation have specific layout since it's in the side bar*/
 .navlinks {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    font-size: 90%;
+    font-size: 100%;
     margin: 5%;
-    width: auto;
-}
-
-/* ALL LINKS */
-a:link {
-    color: var(--dark);
-    text-decoration: none;
-}
-
-a:hover {
-    /*background-color: var(--rasberry);*/
-    color: var(--rasberry);
-    text-decoration: underline;
-    cursor: ;
-}
-
-a:visited {
-    color: var(--orange);
-    text-decoration: none;
-}
-
-a:active {
-    background-color: var(--cherry);
-    color: var(--light)
-}
-
-.material-icons {
-    color: var(--cherry);
+    width: 30%;
 }
 
 /* MAIN CONTENT STYLING */
@@ -117,32 +123,13 @@ section {
     margin-bottom: 25px;
 }
 
-h2,
-h3 {
-    font-size: 150%;
-}
-
 /* ABOUT SECTION */
 .about {
     display: block;
     inline-size: 95%;
-    overflow: ;
 }
-
-.about>p {
-    font-size: 80%;
-}
-
 
 /* PORTFOLIO */
-
-h4 {
-    font-size: 90%;
-    font-weight: bolder;
-    color: var(--rasberry);
-    margin: 0;
-    /* margin-left: 42.5%; */
-}
 
 section>.portfoliocontainer {
     display: flex;
@@ -166,10 +153,6 @@ section>.portfoliocontainer {
 .big {
     flex: 1 0 80%;
     justify-content: space-evenly;
-}
-
-/* #bigtile {
-    margin-left: 25%;
 }
 
 /* RESPONSIVE IMAGES  */
@@ -230,7 +213,7 @@ p.border>a:visited {
 
 /* MEDIA QUERIES */
 
-/* Tablet */
+/* TABLET */
 @media screen and (max-device-width: 820px) and (min-device-width: 768px) {
 
     nav {
@@ -262,7 +245,7 @@ p.border>a:visited {
     }
 }
 
-/* Moblie */
+/* MOBILE */
 @media screen and (max-device-width: 767px) and (min-device-width: 280px) {
 
     body,
