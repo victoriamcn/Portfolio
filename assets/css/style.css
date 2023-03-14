@@ -152,6 +152,7 @@ section>.portfoliocontainer {
 
 .big {
     flex: 1 0 80%;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 

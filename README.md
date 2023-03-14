@@ -10,11 +10,16 @@ I also learned that having a reset.css file is good practice to better the UI/UX
 
 ## Table of Contents
 
+- [Deployed Application](#deployed-application)
 - [Mock-Up](#mock-up)
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Credits](#credits)
 - [License](#license)
+
+## Deployed Application
+
+[https://victoriamcn.github.io/Portfolio/](https://victoriamcn.github.io/Portfolio/)
 
 ## Mock-Up
 
