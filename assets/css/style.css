@@ -136,6 +136,7 @@ section>.portfoliocontainer {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .tile {
@@ -152,7 +153,6 @@ section>.portfoliocontainer {
 
 .big {
     flex: 1 0 80%;
-    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
