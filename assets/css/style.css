@@ -139,6 +139,11 @@ section>.portfoliocontainer {
     align-items: center;
 }
 
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
 .tile {
     margin: 5px;
     padding: 5px;
