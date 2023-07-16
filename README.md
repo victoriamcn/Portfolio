@@ -35,8 +35,9 @@ My tech portfolio is a dynamic personal portfolio application built with React a
 ## Credits
 
 ### Framework Documentation
-[React](https://react.dev/learn/react-developer-tools) 
-[Vite](https://vitejs.dev/guide/)
+**[React](https://react.dev/learn/react-developer-tools)**
+
+**[Vite](https://vitejs.dev/guide/)**
 
 ### Tutorials
 
