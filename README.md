@@ -27,7 +27,7 @@ My tech portfolio is a dynamic personal portfolio application built with React a
 
 ## License
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 - [Click here](https://opensource.org/license/apache-2-0/) to view the license documentation or,
 - Go to the [license file](https://github.com/victoriamcn/React-Portfolio/blob/main/LICENSE) with in this repository.
@@ -36,6 +36,7 @@ My tech portfolio is a dynamic personal portfolio application built with React a
 
 ### Framework Documentation
 [React](https://react.dev/learn/react-developer-tools) 
+[Vite](https://vitejs.dev/guide/)
 
 ### Tutorials
 
