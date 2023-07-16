@@ -1,42 +1,166 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  /* neutrals */
+  --dark-zeus: #1E1B15;
+  --light-alabaster: #F8F8F7;
+  --header-parchment: #F3E7D7;
+  --footer-green-celeste:#D1D6C9;
+
+  /* colors */
+  --titles-blue-santorini: #0464D4;
+  --nav-orange-ripemango:#D1603C;
+  --nav-pink-vanillaice: #F4DEDC;
+  --btn-pink-redviolet: #C53C80;
+  --link-orange-flamingo: #EE583F;
+  --misc-purple-Kate:#9CA3F9;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* layout:header, content, footer */
+
+body {
+  background-color: var(--light-alabaster) !important;
+  color: var(--dark-zeus);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+header  {
+  background-color: var(--nav-pink-vanillaice) !important;
+}
+
+.herobackground {
+  border-bottom: 2px dotted var(--link-orange-flamingo) !important;
+  margin-bottom: 3rem !important;
+}
+
+section {
+  padding-top: 1rem;
+}
+
+#projects, #nav {
+  border-top: none !important;
+}
+
+footer {
+  margin-top: 3rem !important;
+  border-top: 2px dotted var(--link-orange-flamingo) !important;
+  background-color: var(--btn-pink-redviolet) !important;
+}
+
+span.icon, span.social, .byvictoria {
+  color: var(--nav-pink-vanillaice)!important;
+}
+
+.social {
+  font-weight: bold !important;
+}
+
+.byvictoria {
+  font-style: italic;
+}
+
+.navlink {
+  font-family: 'Fjalla One', 'Bebas Neue', sans-serif !important;
+  font-weight: bold;
+  text-decoration: none !important;
+  background-color: var(--btn-pink-redviolet) !important;
+  color: var(--light-alabaster) !important;
+}
+
+a.navlink:hover {
+  background-color: var(--link-orange-flamingo)!important;
+  color: var(--light-alabaster) !important;
+}
+
+
+
+.victoriatitle {
+  font-family: 'Pacifico', 'Modak','Oi', 'Ultra', sans-serif !important;
+  color: var(--dark-zeus) !important;
+  font-size: 5rem;
+  /* text-shadow: .25rem .25rem var(--light-alabaster); */
+
+}
+
+.victoriasubtitle {
+  font-family: 'Fjalla One', 'Bebas Neue', sans-serif !important;
+  color: var(--link-orange-flamingo) !important;
+  font-size: 2.5rem;
+ /* text-shadow: .1rem .1rem var(--nav-orange-ripemango);  */
+}
+
+p, li {
+  font-family: 'Heebo', 'Roboto', sans-serif !important;
+  color: var(--neutral-dark-zeus) !important;
+}
+
+.title {
+  font-family: 'Fjalla One', 'Bebas Neue', sans-serif  !important;
+}
+
+footer {
+  background-color: var(--light-alabaster);
+}
+
+span.social {
+  margin: 1rem !important;
+}
+
+/* Links */
+
+a {
+  color: var(--dark-zeus) !important;
+  text-decoration: underline var(--misc-purple-Kate) !important;
+}
+
+a:hover {
+  font-weight: bold;
+  background-color: var(--link-orange-flamingo) !important;
+  color: var(--light-alabaster) !important;
+}
+
+
+/* project boxes */
+.projectcol {
+    margin-right: !important;
+}
+
+button {
+  border: 1px solid var(--btn-pink-redviolet) !important;
+  color: var(--btn-pink-redviolet) !important;
+}
+
+button:hover {
+  background-color: var(--btn-pink-redviolet) !important;
+  color: var(--nav-pink-vanillaice) !important;
+}
+
+.error-text{
+  font-weight: bold;
+}
+
+/* MOBILE DESIGN */
+
+@media screen and (max-width: 480px) {
+  .victoriatitle {
+    font-size: 2rem;  
+    text-shadow: .05rem .05rem var(--footer-green-celeste);
+
   }
-  to {
-    transform: rotate(360deg);
+  
+  .victoriasubtitle {
+    font-size: 1rem;
+    text-shadow: .05rem .05rem var(--nav-orange-ripemango);
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+ .title, .subtitle, .text {
+    font-size: 1rem;
   }
-}
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
+  main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  img.me {
+    width: 150px;
+  }
 }
