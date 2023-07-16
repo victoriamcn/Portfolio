@@ -1,12 +1,18 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+// eslint-disable jsx-a11y/anchor-is-valid 
+
 //with a Navigation component within it that’s used to conditionally render 
 //About Me, Portfolio, Contact, and Resume sections.
-import React from 'react'
+
+
+
 
 
 function Navigation({ currentPage, handlePageChange }) {
+    
+
+
     return (
-        <section id="nav" className="hero is-halfheight-with-navbar herobackground">
+        <div id="nav" className="hero is-halfheight-with-navbar herobackground">
 
             {/* Hero Centered */}
             <div className="hero-body">
@@ -64,7 +70,7 @@ function Navigation({ currentPage, handlePageChange }) {
                 </nav>
             </div>
 
-        </section>
+        </div>
     )
 }
 

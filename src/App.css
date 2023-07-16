@@ -14,12 +14,14 @@
   --misc-purple-Kate:#9CA3F9;
 }
 
-/* layout:header, content, footer */
+/* EVERYTHING */
 
 body {
   background-color: var(--light-alabaster) !important;
   color: var(--dark-zeus);
 }
+
+/* HEADER */
 
 header  {
   background-color: var(--nav-pink-vanillaice) !important;
@@ -30,13 +32,39 @@ header  {
   margin-bottom: 3rem !important;
 }
 
-section {
-  padding-top: 1rem;
-}
-
 #projects, #nav {
   border-top: none !important;
 }
+
+.victoriatitle {
+  font-family: 'Pacifico', 'Modak','Oi', 'Ultra', sans-serif !important;
+  color: var(--dark-zeus) !important;
+  font-size: 5rem;
+}
+
+.victoriasubtitle {
+  font-family: 'Fjalla One', 'Bebas Neue', sans-serif !important;
+  color: var(--link-orange-flamingo) !important;
+  font-size: 2.5rem;
+}
+
+/* SECTIONS */
+
+section {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+p, li {
+  font-family: 'Heebo', 'Roboto', sans-serif !important;
+  color: var(--neutral-dark-zeus) !important;
+}
+
+.title {
+  font-family: 'Fjalla One', 'Bebas Neue', sans-serif  !important;
+}
+
+/* FOOTER */
 
 footer {
   margin-top: 3rem !important;
@@ -44,17 +72,11 @@ footer {
   background-color: var(--btn-pink-redviolet) !important;
 }
 
-span.icon, span.social, .byvictoria {
-  color: var(--nav-pink-vanillaice)!important;
-}
-
-.social {
-  font-weight: bold !important;
-}
-
 .byvictoria {
   font-style: italic;
 }
+
+/* LINKS AND ICONS */
 
 .navlink {
   font-family: 'Fjalla One', 'Bebas Neue', sans-serif !important;
@@ -69,41 +91,17 @@ a.navlink:hover {
   color: var(--light-alabaster) !important;
 }
 
-
-
-.victoriatitle {
-  font-family: 'Pacifico', 'Modak','Oi', 'Ultra', sans-serif !important;
-  color: var(--dark-zeus) !important;
-  font-size: 5rem;
-  /* text-shadow: .25rem .25rem var(--light-alabaster); */
-
+span.icon, span.social, .byvictoria {
+  color: var(--nav-pink-vanillaice)!important;
 }
 
-.victoriasubtitle {
-  font-family: 'Fjalla One', 'Bebas Neue', sans-serif !important;
-  color: var(--link-orange-flamingo) !important;
-  font-size: 2.5rem;
- /* text-shadow: .1rem .1rem var(--nav-orange-ripemango);  */
-}
-
-p, li {
-  font-family: 'Heebo', 'Roboto', sans-serif !important;
-  color: var(--neutral-dark-zeus) !important;
-}
-
-.title {
-  font-family: 'Fjalla One', 'Bebas Neue', sans-serif  !important;
-}
-
-footer {
-  background-color: var(--light-alabaster);
+.social {
+  font-weight: bold !important;
 }
 
 span.social {
   margin: 1rem !important;
 }
-
-/* Links */
 
 a {
   color: var(--dark-zeus) !important;
@@ -116,11 +114,6 @@ a:hover {
   color: var(--light-alabaster) !important;
 }
 
-
-/* project boxes */
-.projectcol {
-    margin-right: !important;
-}
 
 button {
   border: 1px solid var(--btn-pink-redviolet) !important;
@@ -135,6 +128,7 @@ button:hover {
 .error-text{
   font-weight: bold;
 }
+
 
 /* MOBILE DESIGN */
 
