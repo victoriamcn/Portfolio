@@ -1,69 +1,81 @@
-# Victoria McNorrill's Portfolio
+# React-Portfolio
 
 ## Description
-
-My portfolio website was created so I can showcase my work to potential employers. Right now, this is a static website. As I learn JavaScript, I want to make my portfolio more interactive.
-
-While creating this project, I learned it is best for me, as a developer, to outline what elements I want to incorporate and how I want the layout to look like befre diving into CSS.
-
-I also learned that having a reset.css file is good practice to better the UI/UX accross all browsers.
+My tech portfolio is a dynamic personal portfolio application built with React and designed to showcase my web development skills to potential employers. It offers seamless navigation, project displays, and a user-friendly interface for potential employers.
 
 ## Table of Contents
+- [React-Portfolio](#React-Portfolio)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Links](#links)
+  - [Preview](#preview)
+  - [License](#license)
+  - [Credits](#credits)
+    - [Framework Documentation](#framework-documentation)
+    - [Tutorials](#tutorials)
+    - [Example Code](#example-code)
+  - [Badges](#badges)
+    - [Frameworks and Libraries](#frameworks-and-libraries)
+    - [Integrated Development Environments (IDE)](#untegrated-development-environments-ide)
+    - [Languages](#languages)
+## Links
 
-- [Deployed Application](#deployed-application)
-- [Mock-Up](#mock-up)
-- [User Story](#user-story)
-- [Acceptance Criteria](#acceptance-criteria)
-- [Credits](#credits)
-- [License](#license)
+[Deployed Site](https://victoriamcn.github.io/React-Portfolio/#about)
 
-## Deployed Application
+[GitHub Repository](https://github.com/victoriamcn/React-Portfolio)
 
-[https://victoriamcn.github.io/Portfolio/](https://victoriamcn.github.io/Portfolio/)
-
-## Mock-Up
-
-![](https://github.com/victoriamcn/Portfolio/blob/main/assets/Mock%20Up/Portfolio.gif)
-
-## User Story
-
-1. AS AN employer
-2. I WANT to view a potential employee's deployed portfolio of work samples
-3. SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
-
-## Acceptance Criteria
-
-Below are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager's needs:
-
-- GIVEN I need to sample a potential employee's previous work
-- WHEN I load their portfolio
-- THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-- WHEN I click one of the links in the navigation
-- THEN the UI scrolls to the corresponding section
-- WHEN I click on the link to the section about their work
-- THEN the UI scrolls to a section with titled images of the developer's applications
-- WHEN I am presented with the developer's first application
-- THEN that application's image should be larger in size than the others
-- WHEN I click on the images of the applications
-- THEN I am taken to that deployed application
-- WHEN I resize the page or view the site on various screens and devices
-- THEN I am presented with a responsive layout that adapts to my viewport'
-
-
-## Credits
-
-**Inspiration**
-- [Format's article entitled "19 Website Navigation Design Examples For Your Online Portfolio"](https://www.format.com/magazine/resources/photography/website-navigation-designs)
-- [W3Schools](https://www.w3schools.com/howto/tryw3css_templates_portfolio.htm#portfolio)
-- [Jack Tomaszewski](https://jtom.me/portfolio/)
-
-**Tutorials**
-- [Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- [Flexbox Wrapping Guide](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items)
-- [Media Query Guide](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/)
 
 ## License
 
-Refer to [https://github.com/victoriamcn/Portfolio/blob/main/LICENSE](https://github.com/victoriamcn/Portfolio/blob/main/LICENSE) to view the MIT License.
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-[Google Fonts Material Icons License](https://www.apache.org/licenses/LICENSE-2.0.txt)
+- [Click here](https://opensource.org/license/apache-2-0/) to view the license documentation or,
+- Go to the [license file](https://github.com/victoriamcn/React-Portfolio/blob/main/LICENSE) with in this repository.
+
+## Credits
+
+### Framework Documentation
+[React](https://react.dev/learn/react-developer-tools) 
+
+### Tutorials
+
+- Digital Ocean: [Introduction to Bulma CSS with React](https://www.digitalocean.com/community/tutorials/react-intro-react-bulma-components)
+- dev: [Using the useState Hook and Working with Forms in React.js.](https://dev.to/heyjoshlee/using-the-usestate-hook-and-working-with-forms-in-react-js-m6b)
+- freeCodeCamp: [How to Build Forms in React](https://www.freecodecamp.org/news/how-to-build-forms-in-react/)
+- Medium: [Building React Forms With useState](https://medium.com/@aaron_schuyler/building-react-forms-with-usestate-2cf45a3110ac)
+- Medium: [How to use HTML5 form validations with React](https://codeburst.io/how-to-use-html5-form-validations-with-react-4052eda9a1d4)
+- mailtrap: [Building Contact Form and Handling Emails with React](https://mailtrap.io/blog/react-contact-form/)
+- mailtrap: [How to Validate Emails in React](https://mailtrap.io/blog/validate-emails-in-react/)
+- One Complier: [Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined](https://onecompiler.com/questions/3tjhj2ytk/element-type-is-invalid-expected-a-string-for-built-in-components-or-a-class-function-for-composite-components-but-got-undefined-you-likely-forgot-to-export-your-component-from-the-file-it-s-defined-in-or-you-might-have-mixed-up-default-and-named-imports)
+- StackOverflow: [How do I add validation to the form in my React component?](https://stackoverflow.com/questions/41296668/how-do-i-add-validation-to-the-form-in-my-react-component)
+- StackOverflow: [map function not working in React](https://stackoverflow.com/questions/39999671/map-function-not-working-in-react)
+- StackOverflow: [React pdf onclick download](https://stackoverflow.com/questions/50964445/react-pdf-onclick-download)
+- StackOverflow: [React site warning: The href attribute requires a valid address. Provide a valid, navigable address as the href value jsx-a11y/anchor-is-valid](https://stackoverflow.com/questions/52801051/react-site-warning-the-href-attribute-requires-a-valid-address-provide-a-valid)
+- StackOverflow: [Rendering an array.map() in React](https://stackoverflow.com/questions/38282997/rendering-an-array-map-in-react)
+- StackOverflow: [Webpack successfully compiled but does not show output in browser](https://stackoverflow.com/questions/44515434/webpack-successfully-compiled-but-does-not-show-output-in-browser)
+
+### Example Code
+
+- GitHub: [Lemming97](https://github.com/Lemming97/React_Portfolio/blob/main/src/components/Contact/index.js)
+- GitHub: [EmilyNecciai](https://github.com/EmilyNecciai/react-portfolio/blob/main/src/components/Contact.js)
+
+## Badges
+
+### Frameworks and Libraries
+
+![Bulma](https://img.shields.io/badge/bulma-00D0B1?style=for-the-badge&logo=bulma&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+
+
+### Integrated Development Environments (IDE)
+
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+### Languages
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
