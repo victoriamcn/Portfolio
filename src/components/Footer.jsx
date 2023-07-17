@@ -1,6 +1,6 @@
 function Footer() {  
     return (
-      <div className="footer">
+      <footer className="footer">
           <div className="content has-text-centered">
             <a href="https://github.com/victoriamcn" target="_blank" rel="noreferrer">
               <span className="icon">
@@ -30,7 +30,7 @@ function Footer() {
           <div className="content has-text-centered">
             <p className='byvictoria'>Created by Victoria</p>
           </div>
-      </div>
+      </footer>
     );
   }
   

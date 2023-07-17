@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- BULMA -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-  <!-- CSS -->
-  <link rel="stylesheet" href="src/App.css" />
-  <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Heebo:wght@300;500&family=Pacifico&family=Modak&family=Oi&family=Roboto:ital,wght@0,400;0,700;1,300&family=Ultra&display=swap"
-    rel="stylesheet" />
-  <!-- PAGE ICON -->
-  <link rel="icon" href="public/favicon.ico" />
-  <title>Victoria | Web Developer</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- SCRIPT TO REACT JS -->
+    <script type="module" src="/src/App.jsx"></script>
+    <!-- BULMA -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/App.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Heebo:wght@300;500&family=Pacifico&family=Modak&family=Oi&family=Roboto:ital,wght@0,400;0,700;1,300&family=Ultra&display=swap"
+      rel="stylesheet" />
+    <!-- PAGE ICON -->
+    <link rel="icon" href="favicon.ico" />
+    <title>Victoria | Web Developer</title>
+  </head>
 
-<body>
-  <div id="root"></div>
+  <body>
+    <div id="root"></div>
 
-  <!-- SCRIPT TO REACT JS -->
-  <script type="module" src="/src/main.jsx"></script>
+    <!-- SCRIPT TO REACT JS -->
+    <script type="module" src="/src/App.jsx"></script>
+    <!-- Calendly WIDGET -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"/>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script
+      type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/victoriacodes?background_color=f8f8f7&text_color=1e1b15&primary_color=0464d4', text: 'Schedule Time to Chat 1:1', color: '#0464d4', textColor: '#f8f8f7', branding: true }) }</script>
+    
+    <!-- SCRIPT TO SMTP -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+    <!-- SCRIPT TO FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/e10cb25af7.js" crossOrigin="anonymous"></script>
 
-  <!-- Calendly WIDGET -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script
-    type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/victoriacodes?background_color=f8f8f7&text_color=1e1b15&primary_color=0464d4', text: 'Schedule Time to Chat 1:1', color: '#0464d4', textColor: '#f8f8f7', branding: true }); }</script>
-  
-  <!-- SCRIPT TO SMTP -->
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  
-  <!-- SCRIPT TO FONT AWESOME -->
-  <script src="https://kit.fontawesome.com/e10cb25af7.js" crossorigin="anonymous"></script>
-</body>
+  </body>
 
 </html>

@@ -1,6 +1,9 @@
-function Navigation({ currentPage, handlePageChange }) {
+// import React from 'react';
+import { NavLink } from 'react-router-dom'
+
+function Navigation() {
     return (
-        <div id="nav" className="hero is-halfheight-with-navbar herobackground">
+        <header id="nav" className="hero is-halfheight-with-navbar herobackground">
 
             {/* Hero Centered */}
             <div className="hero-body">
@@ -20,45 +23,37 @@ function Navigation({ currentPage, handlePageChange }) {
                 <nav className="tabs is-boxed navtabs">
                     <div className="container">
                         <ul>
-                            <li>
-                                <a href="#projects"
-                                    // current page check
-                                    className={currentPage === 'Projects' ? 'navlink active' : 'navlink'}
-                                    // when tab is clicked, page changes
-                                    onClick={() => handlePageChange('Projects')}>
-                                    PROJECTS
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#about"
-                                    className={currentPage === 'About' ? 'navlink active' : 'navlink'}
-                                    // when tab is clicked, page changes
-                                    onClick={() => handlePageChange('About')}>
-                                    ABOUT
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#resume"
-                                    className={currentPage === 'Resume' ? 'navlink active' : 'navlink'}
-                                    // when tab is clicked, page changes
-                                    onClick={() => handlePageChange('Resume')}>
-                                    RESUME
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#contact"
-                                    className={currentPage === 'Contact' ? 'navlink active' : 'navlink'}
-                                    // when tab is clicked, page changes
-                                    onClick={() => handlePageChange('Contact')}>
-                                    CONTACT
-                                </a>
-                            </li>
+                            <NavLink
+                            to="/Projects"
+                            className={({ isActive }) => isActive ? "active" : ""}>
+                            <li>PROJECTS</li>
+                            </NavLink>
+                        
+                            <NavLink
+                            to="/"
+                            className={({ isActive }) => isActive ? "active" : ""}>
+                            <li>ABOUT</li> 
+                            </NavLink>
+
+                        
+                            <NavLink 
+                            to="/Resume"
+                            className={({ isActive }) => isActive ? "active" : ""}>
+                            <li>RESUME</li>
+                            </NavLink>
+
+                            <NavLink
+                            to="/Contact"
+                            className={({ isActive }) => isActive ? "active" : ""}>
+                            <li>CONTACT</li>
+                            </NavLink>
+
                         </ul>
                     </div>
                 </nav>
             </div>
 
-        </div>
+        </header>
     )
 }
 
