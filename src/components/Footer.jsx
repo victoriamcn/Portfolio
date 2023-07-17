@@ -29,7 +29,6 @@ function Footer() {
           </div>
           <div className="content has-text-centered">
             <p className='byvictoria'>Created by Victoria</p>
-            <p className='byvictoria is-small'>with React, JavaScript and Bulma CSS</p>
           </div>
       </div>
     );

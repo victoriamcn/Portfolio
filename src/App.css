@@ -16,30 +16,18 @@
 
 /* EVERYTHING */
 
-.all-content {
-  width: 100% !important;
-}
 
 body {
   background-color: var(--light-alabaster) !important;
-  color: var(--dark-zeus);
-  width: 100% !important;
+  color: var(--dark-zeus) !important;
+  width: 100vh !important;
 }
 
 /* HEADER */
 
 header  {
   background-color: var(--nav-pink-vanillaice) !important;
-  width: 100% !important;
-}
-
-.herobackground {
-  border-bottom: 2px dotted var(--link-orange-flamingo) !important;
-  margin-bottom: 3rem !important;
-}
-
-#projects, #nav {
-  border-top: none !important;
+  width: 100vh !important;
 }
 
 .victoriatitle {
@@ -54,12 +42,22 @@ header  {
   font-size: 2.5rem;
 }
 
+.herobackground {
+  border-bottom: 2px dotted var(--link-orange-flamingo) !important;
+  margin-bottom: 3rem !important;
+}
+
+#projects, #nav {
+  border-top: none !important;
+}
+
+
 /* MAIN */
 
 main {
-  width: 100% !important;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  width: 100vh !important;
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
 }
 
 p, li {
@@ -76,13 +74,18 @@ p, li {
 footer {
   margin-top: 3rem !important;
   border-top: 2px dotted var(--link-orange-flamingo) !important;
-  background-color: var(--btn-pink-redviolet) !important;
-  width: 100% !important;
+  width: 100vh !important;
 
 }
 
+.footer {
+  background-color: var(--btn-pink-redviolet) !important;
+  font-family: 'Fjalla One', 'Bebas Neue', sans-serif !important;
+}
+
 .byvictoria {
-  font-style: italic;
+  font-size: .5rem;
+  font-family: 'Fjalla One', 'Bebas Neue', sans-serif !important;
 }
 
 /* LINKS AND ICONS */
