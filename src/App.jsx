@@ -11,21 +11,31 @@ import Footer from "./components/Footer"
 
 function App() {
 
+  function renderWithHeaderFooter(Component) {
+    return (
+      <>
+        <Navigation />
+        <Component />
+        <Footer />
+      </>
+    )
+  }
+
 
   return (
     <>
-      <Navigation />
+      
 
       <BrowserRouter>
         <Routes>
-          <Route path="/Projects" element={<Projects />}/>
-          <Route path="/" element={<About/>}/>
-          <Route path="/Contact" element={<Contact />}/>
-          <Route path="/Resume" element={<Resume />}/>
+          <Route path="/Projects" element={renderWithHeaderFooter(Projects)}/>
+          <Route path="/" element={renderWithHeaderFooter(About)}/>
+          <Route path="/Contact" element={renderWithHeaderFooter(Contact)}/>
+          <Route path="/Resume" element={renderWithHeaderFooter(Resume)}/>
         </Routes>
       </BrowserRouter>
       
-      <Footer />
+      
 
     </>
   )

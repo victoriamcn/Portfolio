@@ -25,26 +25,26 @@ function Navigation() {
                         <ul>
                             <NavLink
                             to="/Projects"
-                            className={({ isActive }) => isActive ? "active" : ""}>
+                            className={({ isActive }) => isActive ? "active" : "navlink"}>
                             <li>PROJECTS</li>
                             </NavLink>
                         
                             <NavLink
                             to="/"
-                            className={({ isActive }) => isActive ? "active" : ""}>
+                            className={({ isActive }) => isActive ? "active" : "navlink"}>
                             <li>ABOUT</li> 
                             </NavLink>
 
                         
                             <NavLink 
                             to="/Resume"
-                            className={({ isActive }) => isActive ? "active" : ""}>
+                            className={({ isActive }) => isActive ? "active" : "navlink"}>
                             <li>RESUME</li>
                             </NavLink>
 
                             <NavLink
                             to="/Contact"
-                            className={({ isActive }) => isActive ? "active" : ""}>
+                            className={({ isActive }) => isActive ? "active" : "navlink"}>
                             <li>CONTACT</li>
                             </NavLink>
 

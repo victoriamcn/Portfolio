@@ -97,7 +97,8 @@ footer {
   color: var(--light-alabaster) !important;
 }
 
-a.navlink:hover {
+.navlink:hover, .active {
+  text-decoration: none !important;
   background-color: var(--link-orange-flamingo)!important;
   color: var(--light-alabaster) !important;
 }
