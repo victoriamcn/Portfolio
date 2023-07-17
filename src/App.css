@@ -56,7 +56,7 @@ header  {
 
 /* MAIN */
 
-main {
+#about, #contact, #projects, #resume {
   margin-left: 1rem !important;
   margin-right: 1rem !important;
 }
