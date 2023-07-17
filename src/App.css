@@ -16,15 +16,21 @@
 
 /* EVERYTHING */
 
+.all-content {
+  width: 100% !important;
+}
+
 body {
   background-color: var(--light-alabaster) !important;
   color: var(--dark-zeus);
+  width: 100% !important;
 }
 
 /* HEADER */
 
 header  {
   background-color: var(--nav-pink-vanillaice) !important;
+  width: 100% !important;
 }
 
 .herobackground {
@@ -48,9 +54,10 @@ header  {
   font-size: 2.5rem;
 }
 
-/* SECTIONS */
+/* MAIN */
 
-section {
+main {
+  width: 100% !important;
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -70,6 +77,8 @@ footer {
   margin-top: 3rem !important;
   border-top: 2px dotted var(--link-orange-flamingo) !important;
   background-color: var(--btn-pink-redviolet) !important;
+  width: 100% !important;
+
 }
 
 .byvictoria {

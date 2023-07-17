@@ -1,5 +1,5 @@
 import {useState } from 'react';
-import { validateEmail } from "../utils/validateEmail"
+import { validateEmail } from "./utils/validateEmail"
 
 const Contact = () => {
     
@@ -64,17 +64,17 @@ const Contact = () => {
         }
 
         setName('');
+        setCompany('');
         setEmail('');
         setBody('');
     };
 
 
     return (
-        <section id="contact" className="content" >
+        <section id="contact" >
             <form 
-            className="form box" 
+            className="form" 
             onSubmit={handleSubmit}
-            method="POST"
             >
                 <p className="title">CONTACT ME</p>
                 <div className="field">
@@ -82,6 +82,7 @@ const Contact = () => {
                     <div className="control is-medium">
                         <input
                             id="name"
+                            className="input"
                             value={name}
                             onChange={handleInputChange}
                             name="name"
@@ -95,11 +96,12 @@ const Contact = () => {
                     <div className="control is-medium">
                         <input
                             id="company"
+                            className="input"
                             value={company}
                             onChange={handleInputChange}
                             name="company"
                             type="text"
-                            placeholder="e.g Your Awesome Business, LLC."
+                            placeholder="e.g Awesome Business, LLC."
                             required />
                     </div>
                 </div>
@@ -109,6 +111,7 @@ const Contact = () => {
                     <div className="control">
                         <input 
                             id="email"
+                            className="input"
                             value={email}
                             onChange={handleInputChange}
                             name="email"
@@ -121,10 +124,13 @@ const Contact = () => {
                 <div className="field">
                     <label className="label">Say something:</label>
                     <div className="control">
-                        <textarea id="message"
+                        <textarea
+                            id="body"
+                            className="textarea"
                             value={body}
                             onChange={handleInputChange}
-                            name="textarea"
+                            name="body"
+                            type="text"
                             placeholder="e.g. Something here..."
                             rows="5"
                             cols="30"
@@ -138,7 +144,9 @@ const Contact = () => {
                     type="button"
                     className="button submit m-3"
                     onClick={handleSubmit}
-                    >Submit</button>
+                    >
+                    Submit
+                    </button>
                 </div>
                 {
                 errorMessage && (
@@ -151,7 +159,6 @@ const Contact = () => {
                 {
                     submitted && (
                         <div className="notification is-info">
-                            <button className="delete"></button>
                             {submitted}
                         </div>
                     )

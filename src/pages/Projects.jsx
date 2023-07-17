@@ -1,12 +1,10 @@
-import React from 'react';
-
-import LaborHubImg from "../../assets/images/LaborHub-desktop-dashboard.jpg";
-import NightOwlImg from "../../assets/images/NightOwl-Home.html.png";
-import SocialNetImg from "../../assets/images/nosqlsocialnetworkPUTroute.png";
-import WeatherImg from "../../assets/images/weatherpreview.png";
-import TimedQuizImg from "../../assets/images/Timed-Quiz-Preview.png"
-import ReactPortfolio from "../../assets/images/reactportfolio.png"
-import OCDetourImg from "../../assets/images/activitypreview.png"
+import LaborHubImg from "../assets/images/LaborHub-desktop-dashboard.jpg";
+import NightOwlImg from "../assets/images/NightOwl-Home.html.png";
+import SocialNetImg from "../assets/images/nosqlsocialnetworkPUTroute.png";
+import WeatherImg from "../assets/images/weatherpreview.png";
+import TimedQuizImg from "../assets/images/Timed-Quiz-Preview.png"
+import ReactPortfolio from "../assets/images/reactportfolio.png"
+import OCDetourImg from "../assets/images/activitypreview.png"
 
 const list = [
         {
@@ -83,7 +81,7 @@ const list = [
 
 function Projects() {
     return (
-         <section id="projects" className="flexcards content">   
+         <section id="projects" className="flexcards">   
                  <div className="columns is-flex is-flex-wrap-wrap is-justify-content-center">
         <p></p>
         {list.map((detail, i) => (

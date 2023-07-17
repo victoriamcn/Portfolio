@@ -1,11 +1,10 @@
-import React from 'react'
-import ResumePDF from '../../assets/resume/LINKEDINVictoriaMcNorrillResume2023.pdf'
+import ResumePDF from '../assets/resume/LINKEDINVictoriaMcNorrillResume2023.pdf'
 //portfolio/src/images/resume/LINKEDINVictoriaMcNorrillResume2023.pdf
-import TechSkills from '../utils/techSkills'
+import TechSkills from './utils/techSkills'
 
 const Resume = () => {
     return (
-        <section id="resume" className="content" >
+        <section id="resume">
             <div className="tile is-ancestor">
                 <div className="tile is-parent">
                     <article className="tile is-child box">

@@ -1,14 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
-import Headshot from '../../assets/photos/headshot.jpg'
-//portfolio/src/assets/photos/headshot.jpg
-import MeOne from '../../assets/photos/me 1.png'
-import MeTwo from '../../assets/photos/me 2.png'
+import Headshot from '../assets/photos/headshot.jpg';
+import MeOne from '../assets/photos/me 1.png';
+import MeTwo from '../assets/photos/me 2.png';
 
-// alt="A woman wearing a beanie and coat stands smiling with the Cliffs of Moher."
 
 const About = () => {
     return (
-        <section id="about" className="content">
+        <section id="about">
             <div className="tile is-ancestor">
                 <div className="tile is-parent">
                     <article className="tile is-child box">

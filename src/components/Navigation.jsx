@@ -1,16 +1,4 @@
-// eslint-disable jsx-a11y/anchor-is-valid 
-
-//with a Navigation component within it that’s used to conditionally render 
-//About Me, Portfolio, Contact, and Resume sections.
-
-
-
-
-
 function Navigation({ currentPage, handlePageChange }) {
-    
-
-
     return (
         <div id="nav" className="hero is-halfheight-with-navbar herobackground">
 
