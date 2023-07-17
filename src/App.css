@@ -91,13 +91,13 @@ footer {
 
 .navlink {
   font-family: 'Fjalla One', 'Bebas Neue', sans-serif !important;
-  font-weight: bold;
   text-decoration: none !important;
   background-color: var(--btn-pink-redviolet) !important;
   color: var(--light-alabaster) !important;
 }
 
 .navlink:hover, .active {
+  font-family: 'Fjalla One', 'Bebas Neue', sans-serif !important;
   text-decoration: none !important;
   background-color: var(--link-orange-flamingo)!important;
   color: var(--light-alabaster) !important;
