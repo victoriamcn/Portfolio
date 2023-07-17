@@ -20,14 +20,12 @@
 body {
   background-color: var(--light-alabaster) !important;
   color: var(--dark-zeus) !important;
-  width: 100vh !important;
 }
 
 /* HEADER */
 
 header  {
   background-color: var(--nav-pink-vanillaice) !important;
-  width: 100vh !important;
 }
 
 .victoriatitle {
@@ -55,7 +53,6 @@ header  {
 /* MAIN */
 
 main {
-  width: 100vh !important;
   margin-left: 1rem !important;
   margin-right: 1rem !important;
 }
