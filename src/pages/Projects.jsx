@@ -3,7 +3,7 @@ import NightOwlImg from "../assets/images/NightOwl-Home.html.png";
 import SocialNetImg from "../assets/images/nosqlsocialnetworkPUTroute.png";
 import WeatherImg from "../assets/images/weatherpreview.png";
 import TimedQuizImg from "../assets/images/Timed-Quiz-Preview.png"
-import ReactPortfolio from "../assets/images/reactportfolio.png"
+import PortfolioImg from "../assets/images/portfolio.png"
 import OCDetourImg from "../assets/images/activitypreview.png"
 
 const list = [
@@ -68,13 +68,13 @@ const list = [
         key: 5,
     },
     {
-        title: 'Portfolio with React',
-        repository: "https://github.com/victoriamcn/React-Portfolio",
-        deployed: "https://victoriamcn.github.io/React-Portfolio/#about",
-        preview: ReactPortfolio,
+        title: 'Portfolio',
+        repository: "https://github.com/victoriamcn/Portfolio",
+        deployed: "https://www.victoriamcodes.com/",
+        preview: PortfolioImg,
         alt: "Header: Victoria McNorrill, Full Stack Web Developer. NAvigation: Projects, About Resume, Contact. Resume Page is active. Footer: links to Github, LinkedIn, Spotify.",
         description: "My tech portfolio is built with React and designed to showcase my web development skills to potential employers.",
-        tech: 'JavaScript, React, Bulma.css',
+        tech: 'Vite, JavaScript, React, Bulma.css',
         key: 6,
     },
 ]
