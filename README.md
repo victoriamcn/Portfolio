@@ -1,6 +1,6 @@
 # Note from Victoria
 
-My third portfolio website of four I have created, and is no longer being updated. Looking back after some time and expereince, I put in so, so, so many hours polishing this. I have learned to focus less on the design and focus more on the quality of my existing projects and their documentation. I also shouldn't have deleted my development branches because I cannot update the app (why, past me, why???). My new website is remains housed at [victoriamcodes](https://www.victoriamcodes.com/).
+My third portfolio website of four I have created, and is no longer being updated. Looking back after some time and experience, I put in so, so, so many hours polishing this. I have learned to focus less on the design and focus more on the quality of my existing projects and their documentation. I also shouldn't have deleted my development branches because I cannot update the app (why, past me, why???). My website remains at [victoriamcodes](https://www.victoriamcodes.com/).
 
 ---
 
